@@ -1,167 +1,72 @@
-body{
-    margin: 0px;
-    background-color: rgba(43, 41, 133, 0.781);
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-.barra{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration:none;
-    padding-top: 15px;
-}
-.borde{
-    background-color: rgba(102, 28, 28, 0.685);
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 15px 7px 15px;
-    margin: 0 0 15px 0;
-   
-}
-#marca{
-    font-size: 21px;
-    
-}
-#marca2{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.icono{
-    width: 50px;
-    display: flex;
-    margin: -38px 0px 0px 49px;
-    
-}
-.contenedor{
-   width: 100%;
-   height: 100%;
-   display:flex;
-   flex-wrap: wrap;/*basicamente lo que hace es dejar o no a los div(en este caso) hijos estar en mas de una linea. */
-   justify-content:space-evenly;
-   margin:auto;
-   max-width: 1414px;
-   margin-top: 150px;
-}
-.contenido{
-    width: 30%;
-    height: 600px;
-    border-radius: 10px; /*redondea dependiendo del valor*/
-    overflow: hidden; /*es para saber si quieres mostrar las barras de desplazamiento*/
-    text-align: center;
-    background-color: rgb(201, 115, 115);
-    margin: 0 40px 100px;
-    font-family:sans-serif;
-    padding-top: 50px;
-       
- }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTO</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+   <nav class="borde">
+    <a class="barra" id="marca" href="menu.html">TOTO<img class="icono" src="https://cdn-icons-png.flaticon.com/512/3320/3320396.png" alt="icono-toto"></a>
+    <a class="barra" id="marca2" href="carrito.html">Menú de compra</a>
+   </nav>
+   <h1 id="menut">OFERTAS DE ULTIMO MINUTO!</h1>
+    <div class="contenedor">
+     <div class="contenido"> 
+        <h3>OFERTA</h3>
+        <h2>Lácteos</h2>
+        <div class="imagen">
+        <img src="https://saposyprincesas.elmundo.es/wp-content/uploads/2020/10/tipos-de-leche-destacada.jpg" alt="primera">
+     </div>
+     <div class="descuento">
+        <p>Hasta un 50% de descuento promoción válida hasta 23/01/99 o hasta agotar stock</p>
+     </div>
+     <nav class="redirec">
+         <button><a href="lacteoscat.html">Ver catalogo</a></button>
+     </nav>
+     </div>
+     <div class="contenido"> 
+        <h3>OFERTA</h3>
+        <h2>Galletas</h2>
+        <div class="imagen">
+         <img src="https://cdn0.recetasgratis.net/es/posts/6/2/9/galletas_con_chispas_de_chocolate_caseras_35926_600.webp" alt="primera">
+      </div>
+     <div class="descuento">
+        <p>Hasta un 30% de descuento promoción válida hasta 23/01/13 o hasta agotar stock</p>
+     </div>
+     <nav class="redirec">
+         <button><a href="galletascat.html">Ver catalogo</a></button>
+     </nav>
+    </div>
+    <div class="contenido"> 
+        <h3>OFERTA</h3>
+        <h2>Comida de perro</h2>
+        <div class="imagen">
+         <img src="https://t2.uc.ltmcdn.com/es/posts/7/2/3/comida_de_gato_vs_comida_de_perro_28327_1_600.webp" alt="primera">
+      </div>
+     <div class="descuento">
+        <p>Hasta un 10% de descuento promoción válida hasta 10/01/10 o hasta agotar stock</p>
+     </div>
+     <nav class="redirec">
+         <button><a href="comidaPerro.html">Ver catalogo</a></button>
+     </nav>
+    </div>
+    <div class="contenido"> 
+        <h3>OFERTA</h3>
+        <h2>Chocolaes</h2>
+        <div class="imagen">
+         <img src="https://www.eluniverso.com/resizer/tDWJw4gfwQMSbnbzommtTWeIJcQ=/1117x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/Q4BVKYT25NBNHAFBUG6KWDM6RE.jpg" alt="primera">
+      </div>
+     <div class="descuento">
+        <p>Hasta un 90% de descuento promoción válida hasta 16/03/24 o hasta agotar stock</p>
+     </div>
+     <nav class="redirec">
+         <button><a href="chocolateCat.html">Ver catalogo</a></button>
+     </nav>
+    </div>
+  </div>  
 
- .contenido h3 {
-    color: rgba(1, 1, 27, 0.685);
-
- }
-
- .contenido h2{
-    color: rgba(2, 13, 31, 0.842);
- }
-
- .descuento p{
-   color: rgba(15, 2, 2, 0.863);
-   margin: 50px 10px 0 10px;
-   font-size: 18px;
-   font-style: inherit;
-   font-weight: 700;
-   
- }
- 
- .contenido a{
-   text-decoration: none;
-   color: rgb(61, 47, 28);
-   font-size: 15px;
-   font-style:inherit;
-   font-weight: 700;
- }
- .contenido button{
-    background-color: rgb(189, 101, 101);
-    height: 45px;
-    margin-top: 60px;
-    width: 130px;
- }
- 
- .imagen img{
-    width: 235px;
-    border-radius: 7px;
-    margin-top: 20px;
- }
- 
- .Precio{
-   margin-top: 70px;
-   margin-bottom: 10px;
-   font-size: 25px;
-   font-weight: 900;
-   font-family: 'Courier New', Courier, monospace;
- }
-
- #antes{
-  text-decoration: line-through;
- }
-
- .compra button{
-   font-weight: 800;
-   background-color: yellowgreen;
-   border-color: rgb(179, 16, 16);
-   margin-top: 50px;
-   width: 150px;
-   height: 150px;
-   color: rgb(179, 16, 16);
- }
-
- .contenido2{
-  width: 30%;
-  height: 800px;
-  border-radius: 10px; /*redondea dependiendo del valor*/
-  overflow: hidden; /*es para saber si quieres mostrar las barras de desplazamiento*/
-  text-align: center;
-  background-color: rgb(230, 176, 30);
-  margin: 0 40px 100px;  
-  padding-top: 50px;
-}
-.contenido2 img{
-  margin-top: 10px;
-}
-body h1{
-  margin-top: 100px;
-  font-family: fantasy;
-  font-weight: 100;
-  font-size: 70px;
-  color: yellowgreen;
-  text-shadow: 6px 20px 6px rgb(56, 78, 12);
-}
-.contenido2 h2{
-  font-family: fantasy;
-  font-weight: 50;
-}
-#menut{
-  color: rgb(168, 13, 47);
-}
- @media (max-width: 800px){
-    .contenedor {
-        flex-direction: column;
-        display: flex;
-      }
-      .contenido{
-        justify-content: center;
-        margin: auto;
-        margin-bottom: 60px;
-      }
-    .imagen img{
-        width: 90%;
-    }
-    .contenido2{
-      justify-content: center;
-        margin: auto;
-        margin-bottom: 60px;
-    }
-  
- }
-
+</body>
+</html>
